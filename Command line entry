@@ -1,0 +1,1 @@
+python Solver.py solve-method=KDA data-file=modeldata10.dat min_solve
