@@ -1,0 +1,50 @@
+set model_type := PRDP;
+
+set product := Drug1 Drug2;
+
+set trial := 1 2;
+
+set time_step := 1  2  3  4  5;
+
+set resource_type := Type1 Type2;
+
+param trial_cost:     Drug1 Drug2:=
+	1	  10   10
+	2	  90   80 ;
+
+param trial_duration:     Drug1 Drug2:=
+	1	        2     2
+	2	        4     3 ;
+
+param resource_requirement :=
+	Drug1 1 Type1	1
+	Drug1 1 Type2	1
+	
+	Drug1 2 Type1	1
+	Drug1 2 Type2	2
+	
+	Drug2 1 Type1	1
+	Drug2 1 Type2	1
+	
+	Drug2 2 Type1	2
+	Drug2 2 Type2	1	;
+
+param maximum_revenue :=
+		Drug1	3100
+		Drug2	3250   ;	
+
+param probability:   Drug1 Drug2 :=
+	1	 .30   .40
+	2	 .50   .60  ;
+
+param gammaL :=
+	Drug1	19.2
+	Drug2	19.6 ;
+
+param gammaD :=
+	Drug1	44
+	Drug2	56  ;
+
+param max_resource :=
+	Type1	2
+	Type2	3  ;

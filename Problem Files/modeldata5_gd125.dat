@@ -1,0 +1,95 @@
+set model_type := PRDP;
+
+set product := Drug1 Drug2 Drug3 Drug4 Drug5;
+
+set trial := 1 2 3;
+
+set time_step := 1  2  3  4  5 6;
+
+set resource_type := Type1 Type2;
+
+param trial_cost:     Drug1 Drug2 Drug3	Drug4 Drug5:=
+	1	  10   10	10	10	10
+	2	  90   80 	90	100	70
+	3	  220  200  180	170	210;
+
+param trial_duration:     Drug1 Drug2 Drug3 Drug4 Drug5:=
+	1	    1     1	   1	1	1	
+	2	    1     2    1	2	2
+	3		3     2	   3	2	3;
+
+param resource_requirement :=
+	Drug1 1 Type1	1
+	Drug1 1 Type2	1
+	
+	Drug1 2 Type1	1
+	Drug1 2 Type2	2
+	
+	Drug1 3 Type1	2
+	Drug1 3 Type2	3
+	
+	Drug2 1 Type1	1
+	Drug2 1 Type2	1
+	
+	Drug2 2 Type1	2
+	Drug2 2 Type2	1
+
+	Drug2 3 Type1	2
+	Drug2 3 Type2	3
+
+	Drug3 1 Type1	1
+	Drug3 1 Type2	1
+	
+	Drug3 2 Type1	1
+	Drug3 2 Type2	1
+
+	Drug3 3 Type1	2
+	Drug3 3 Type2	3
+
+	Drug4 1 Type1	1
+	Drug4 1 Type2	1
+	
+	Drug4 2 Type1	1
+	Drug4 2 Type2	2
+	
+	Drug4 3 Type1	2
+	Drug4 3 Type2	3	
+
+	Drug5 1 Type1	1
+	Drug5 1 Type2	1
+	
+	Drug5 2 Type1	1
+	Drug5 2 Type2	1
+
+	Drug5 3 Type1	2
+	Drug5 3 Type2	3;
+
+param maximum_revenue :=
+		Drug1	3100
+		Drug2	3250   
+		Drug3	3300
+		Drug4	3000
+		Drug5	3150;	
+
+param probability:   Drug1 Drug2 Drug3 Drug4 Drug5:=
+	1	 .30   .40	.30	.40	.35
+	2	 .50   .60	.60	.60	.50  
+	3	 .80   .80	.90	.80	.90;
+	
+param gammaL :=
+	Drug1	19.2
+	Drug2	19.6 
+	Drug3	20.0
+	Drug4	19.4
+	Drug5	19.6;
+
+param gammaD :=
+	Drug1	27.5
+	Drug2	35  
+	Drug3	32.5
+	Drug4	30
+	Drug5	30;
+
+param max_resource :=
+	Type1	4
+	Type2	3  ;
