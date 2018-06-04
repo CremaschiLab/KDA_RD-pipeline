@@ -8,12 +8,19 @@ Please note that Core is a work-in-progress. The current version as of June 04, 
 
 # Quickstart
 ###1. Cloning To obtain a copy of the source code
+
 ###2. Run
-The command line: python Solver.py solve-method=MSSP data-file=modeldata.dat
-solve-method: specific the solving methods, options: MSSP/KDA
-data-file: specific the test data file, which include in the Problem Files in this repository.
-###3. The results 
-After it starts, it will create a solution file
+
+The command line example: python Solver.py solve-method=MSSP data-file=modeldata.dat min_solve
+
+Solve-method: specific the solving methods, options: MSSP/KDA
+
+Data-file: specific the test data file, which include in the Problem Files in this repository.
+
+The additional options after test problems: min_solve/max_solve/greedy: specific different approaches for determining when knapsack problems are generated. The default option is the approach for knapsack problems generated after each realizations. The test can be found in: (Christian, B., & Cremaschi, S. (2017). Variants to a knapsack decomposition heuristic for solving R&D pipeline management problems. Computers & Chemical Engineering, 96, 18-32.)
+
+###3. Example: the command line example can be found in: Command line entry. The example command line use the default knapsack problems generation approach.
+
 
 # Data
 The test data is in Problem Files
