@@ -12,6 +12,14 @@ modification, are permitted provided that the following conditions are met:
 * Redistributions in binary form must reproduce the above copyright notice,
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.
+ 
+* If you use/modifies this software, please cite:
+  Christian, B., & Cremaschi, S. (2017). 
+  Variants to a knapsack decomposition heuristic for solving R&D pipeline management problems. 
+  Computers & Chemical Engineering, 96, 18-32.
+  Christian, B., & Cremaschi, S. (2015). 
+  Heuristic solution approaches to the pharmaceutical R&D pipeline management problem. 
+  Computers & Chemical Engineering, 74, 34-47.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
 AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
