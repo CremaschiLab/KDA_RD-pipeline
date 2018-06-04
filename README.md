@@ -22,4 +22,4 @@ The test data is in Problem Files
 The solver file include both multistage stochastic programming model (MSSP) and knapsack problem-based heuristic approach (KDA) to phamarceutical R&D pipeline.
 
 # Contact
-For any questions, feel free to email szc0113@auburn.eduszc0113@auburn.edu
+For any questions, feel free to email szc0113@auburn.edu
