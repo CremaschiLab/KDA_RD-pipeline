@@ -24,18 +24,18 @@ Y: test data file options, which is included in the Problem Files in this reposi
  ...<br />
 * (All test data files can be found in Problem Files) <br />
   *  Input details can be found in:<br />
-    >Christian, B., & Cremaschi, S. (2017). <br />
-    >Variants to a knapsack decomposition heuristic for solving R&D pipeline management problems. <br />
-    >Computers & Chemical Engineering, 96, 18-32.
+     >Christian, B., & Cremaschi, S. (2017). <br />
+     >Variants to a knapsack decomposition heuristic for solving R&D pipeline management problems. <br />
+     >Computers & Chemical Engineering, 96, 18-32.
 
 Z: different approach options for determining when knapsack problems are generated. The default option is the approach for knapsack problems generated after each realization. 
 * Option 1: min_solve <br />
 * Option 2: max_solve <br />
 * Option 3: greedy
   *  The details of different approaches can be found in: <br />
-    >Christian, B., & Cremaschi, S. (2017). <br />
-    >Variants to a knapsack decomposition heuristic for solving R&D pipeline management problems. <br />
-    >Computers & Chemical Engineering, 96, 18-32.
+     >Christian, B., & Cremaschi, S. (2017). <br />
+     >Variants to a knapsack decomposition heuristic for solving R&D pipeline management problems. <br />
+     >Computers & Chemical Engineering, 96, 18-32.
 
 
 ###3. Example: the command line example can be found in: Command line entry.<br />
