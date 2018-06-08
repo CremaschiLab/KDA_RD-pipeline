@@ -16,11 +16,11 @@ Please note that Core is a work-in-progress. The current version as of June 04, 
 The command line: python Solver.py solve-method=X data-file=Y Z <br />
 Example: python Solver.py solve-method=MSSP data-file=modeldata.dat min_solve 
 
-X: solving methods options <br />
+X: speficies the approach that is used to solve the problem. Option MSSP generates the determinisitic equivalent of the multistage stochastic programming (MMSP) model and solves it using CPLEX. Option KDA uses the knapsack-problem based decomposition approach to solve the problem. <br />
 * Option 1: MSSP<br />
 * Option 2: KDA
 
-Y: test data file options, which is included in the Problem Files in this repository <br />
+Y: specifies the test data file, which is included in the Problem Files in this repository. The test data files include the parameter values of instances that were solved. <br />
 * Option 1: modeldata.data <br />
 * Option 2: modeldata3.data <br />
 * Option 3: modeldata4.data <br />
@@ -31,11 +31,11 @@ Y: test data file options, which is included in the Problem Files in this reposi
      >Variants to a knapsack decomposition heuristic for solving R&D pipeline management problems. <br />
      >Computers & Chemical Engineering, 96, 18-32.
 
-Z: different approach options for determining when knapsack problems are generated. The default option is the approach for knapsack problems generated after each realization. 
+Z: speficies the approach to be used in KDA for generating knapsack sub-problems. The default option is min_solve, which generates knapsack sub-problems after each realization. Option max_solve generates knapsack sub-problems at time periods where theyre are no active clinical trials (or projects). Option greedy generates knapsack sub-problems at every time period.
 * Option 1: min_solve <br />
 * Option 2: max_solve <br />
 * Option 3: greedy
-  *  The details of different approaches can be found in: <br />
+  *  Details of different approaches can be found in: <br />
      >Christian, B., & Cremaschi, S. (2017). <br />
      >Variants to a knapsack decomposition heuristic for solving R&D pipeline management problems. <br />
      >Computers & Chemical Engineering, 96, 18-32.
@@ -46,10 +46,10 @@ The example command line uses the default knapsack problems generation approach.
 
 
 ## Data
-The test data is in Problem Files
+The test data is in Problem Files.
 
 ## Solver File
-The solver file include both multistage stochastic programming model (MSSP) and knapsack problem-based heuristic approach (KDA) to phamaceutical R&D pipeline.
+The solver file includes both the multistage stochastic programming model and the knapsack problem-based decomposition algorithm  to solve phamaceutical R&D pipeline clinical trial plannning problem.
 
 ## Contact
 For any questions, feel free to email szc0113@auburn.edu
