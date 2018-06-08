@@ -15,6 +15,7 @@ Please note that Core is a work-in-progress. The current version as of June 04, 
 ###2. How to run algorithm <br />
 The command line: python Solver.py solve-method=X data-file=Y Z <br />
 Example: python Solver.py solve-method=MSSP data-file=modeldata.dat min_solve 
+Please note that you will need to have Pyomo (http://www.pyomo.org/) and CPLEX (as the solver) installed before you run it. 
 
 X: speficies the approach that is used to solve the problem. Option MSSP generates the determinisitic equivalent of the multistage stochastic programming (MMSP) model and solves it using CPLEX. Option KDA uses the knapsack-problem based decomposition approach to solve the problem. <br />
 * Option 1: MSSP<br />
