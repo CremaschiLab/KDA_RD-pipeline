@@ -15,9 +15,9 @@ Please note that Core is a work-in-progress. The current version as of June 04, 
 ###2. How to run algorithm <br />
 The command line: python Solver.py solve-method=X data-file=Y Z <br />
 Example: python Solver.py solve-method=MSSP data-file=modeldata.dat min_solve 
-Please note that you will need to have Pyomo (http://www.pyomo.org/) and CPLEX (as the solver) installed before you run it. 
+Please note that you will need to have Pyomo 4.2.10784 (http://www.pyomo.org/) and CPLEX 12.5.1.0 (as the solver) installed before you run it. 
 
-X: speficies the approach that is used to solve the problem. Option MSSP generates the determinisitic equivalent of the multistage stochastic programming (MMSP) model and solves it using CPLEX. Option KDA uses the knapsack-problem based decomposition approach to solve the problem. <br />
+X: speficies the approach that is used to solve the problem. Option MSSP generates the determinisitic equivalent of the multistage stochastic programming (MSSP) model and solves it using CPLEX. Option KDA uses the knapsack-problem based decomposition approach to solve the problem. <br />
 * Option 1: MSSP<br />
 * Option 2: KDA
 
@@ -48,6 +48,7 @@ The example command line uses the default knapsack problems generation approach.
 
 ## Data
 The test data is in Problem Files.
+New created data file should be located in Problem Files.
 
 ## Solver File
 The solver file includes both the multistage stochastic programming model and the knapsack problem-based decomposition algorithm  to solve phamaceutical R&D pipeline clinical trial plannning problem.
