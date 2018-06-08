@@ -1,10 +1,13 @@
 # KDA_RD-pipeline
-Knapsack problem based heuristic algorithms
+Knapsack problem-based Decomposition Algorithm (KDA)
 
 ## Summary
-This repository contains the data and code needed to test a knapsack problem-based heuristic approach to phamaceutical R&D pipeline planning problems.
+This repository contains the code for solving phamaceutical R&D pipeline clinical trial planning problem using Knapsack problem-based Decomposition Algorithm (KDA) and the data to replicate the results of 
+  >Christian, B., & Cremaschi, S. (2017). <br />
+  >Variants to a knapsack decomposition heuristic for solving R&D pipeline management problems. <br />
+  >Computers & Chemical Engineering, 96, 18-32. 
 
-Please note that Core is a work-in-progress. The current version as of June 04, 2018 has been copied into this repository for result reproducibility. An up-to-date version can be found at the public repo https://github.com/CremaschiLab/KDA_RD-pipebline
+Please note that Core is a work-in-progress. The current version as of June 04, 2018 has been copied into this repository for result reproducibility. An up-to-date version can be found at the public repo https://github.com/CremaschiLab/KDA_RD-pipeline
 
 ## Quickstart
 ###1. Clone file to obtain a copy of the source code
